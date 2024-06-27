@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-playground",
+  "version": "1.0.0",
+  "description": "Mi proyecto de playgound",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "author": "Baldissone Gabriela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
