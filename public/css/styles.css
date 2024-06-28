@@ -214,7 +214,7 @@ footer i {
 .contenedor-login{
     text-align: center;
     margin: 0 auto;
-    width: 40%;
+    width: 85%;
     background: #ffffff96;
     padding: 15px;
     margin-top: 25px;
@@ -456,6 +456,10 @@ input[type="file"] {
         padding-right: 20px;
         width: 30%
     }
+
+    .contenedor-login{
+        width: 65%;
+    }
 }
 
 
@@ -545,5 +549,9 @@ input[type="file"] {
 
     .icons-colours:hover{
         color: #03264C;
+    }
+
+    .contenedor-login{
+        width: 35%;
     }
 }
