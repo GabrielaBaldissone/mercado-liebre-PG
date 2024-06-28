@@ -22,6 +22,6 @@ app.get("/login", (req, res) => {
 
 //Levantar servidor. 
 
-const port = process.nextTick.PORT || 3001;
+let port = 3000 || process.env.PORT; 
 
 app.listen(port, () => console.log(`Servidor corriendo en el puerto ${port}`));
