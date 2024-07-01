@@ -219,12 +219,20 @@ footer i {
 .contenedor-login{
     text-align: center;
     margin: 0 auto;
-    width: 85%;
+    width: 80%;
     background: #ffffff96;
     padding: 15px;
     margin-top: 25px;
     border-radius: 10px;
 }  
+
+:focus.input-register, 
+:focus.input-user, 
+:focus.input-user-register, 
+:focus.input-password-register, 
+:focus.input-password{ 
+    outline: 1px solid #3483fa;
+} 
 
 .form-login{
     width: 80%;   
@@ -235,22 +243,18 @@ footer i {
     border-radius: 3px;
     height: 40px;
     margin-top: 30px;
-    border: none;
 }
 
 .fa-user, .fa-lock{
     font-size: 20px;
-    margin-top: 10px;
-}
-
-.input-user::placeholder, .input-password::placeholder{
-    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .send-login{
     color: rgb(11, 11, 11);
     width: 80%;
-    background-color: #dcdcdc;
+    background-color: #3483fa;
     height: 40px;
     margin-top: 25px;
     font-weight: 700;
@@ -268,53 +272,15 @@ footer i {
     background-color: white;
 }
 
-.span-error-user{
-    display: block;
-    font-style: italic;
-    display: none;
-}
-
-:invalid .span-error-user {
-    display: block;
-    color: red;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 5px;
-}
-
-.span-error-password{
-    display: block;
-    font-style: italic;
-    display: none;
-}
-
-:invalid .span-error-password   {
-    display: block;
-    color: red;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 5px;
-}
-
 .input-user:valid{
-    border: 1px solid rgba(0, 255, 13, 0.532);
-}
-
-.input-user:invalid{
-    border: 1px solid rgba(255, 0, 0, 0.532);
+    outline: 0;
+    border: 1.5px solid rgba(0, 255, 13, 0.748);
 }
 
 .input-password:valid{
-    border: 1px solid rgba(0, 255, 13, 0.532);
+    outline: 0;
+    border: 1.5px solid rgba(0, 255, 13, 0.748);
 }
-
-.input-password:invalid{
-    border: 1px solid rgba(255, 0, 0, 0.532);
-}
-
-.input-register, .input-user, .input-password:focus{ 
-    outline: none; 
-} 
 
 
 /* CSS DEL REGISTER */
@@ -328,6 +294,7 @@ footer i {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 35px;
 }
+
 .title-register {
     font-size: 24px;
     text-align: center;
@@ -345,6 +312,7 @@ footer i {
     font-weight: 500;
     display: block;
 }
+
 input[type="text"], input[type="email"], input[type="date"], input[type="password"], textarea {
     padding: 10px;
     margin-top: 5px;
@@ -381,18 +349,32 @@ input[type="file"] {
     color: white;
 }
 
-.span-error-register{
-    display: block;
-    font-style: italic;
-    display: none;
+.input-user-register::placeholder{
+    visibility: hidden;
 }
 
-:invalid ~ .span-error-register {
-    display: block;
-    color: red;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 5px;
+.input-user-register:focus::placeholder{
+    visibility: visible;
+    padding: 5px;
+}
+
+.input-password-register::placeholder{
+    visibility: hidden;
+}
+
+.input-password-register:focus::placeholder{
+    visibility: visible;
+    padding: 5px;
+}
+
+.input-user-register:valid{
+    outline: 0;
+    border: 1px solid rgba(0, 255, 13, 0.532);
+}
+
+.input-password-register:valid{
+    outline: 0;
+    border: 1px solid rgba(0, 255, 13, 0.532);
 }
 
 
