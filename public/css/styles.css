@@ -122,16 +122,15 @@ a {
 }
 
 .prices { 
+    display: flex;
     font-size: 18px;
-    padding-top: 5px;
     width: 30%;
 }
 
 .desc {
+    margin-left: 35px;
     font-size: 16px;
     color: #39b54a;
-    padding-top: 5px;
-    padding-left: 10px;
     width: 70%;
 }
 
@@ -164,17 +163,19 @@ img {
 
 .box-linea {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    align-items: baseline;
 }
 
 .info {
-    display: block;
-    border-top: solid 1px #ebebeb;
-    background-color: white;
-    padding: 10px;
+    display: flex;
     position: relative;
+    border-top: solid 1px #ebebeb;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
 }
 
 .fa-truck {
@@ -466,6 +467,19 @@ input[type="file"] {
         display: block;
         color: #ffffff;
     }
+
+    
+.prices { 
+    display: flex;
+    font-size: 18px;
+    width: 50%;
+}
+
+.desc {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #39b54a;
+}
 
     .description:hover{
         display: block;
